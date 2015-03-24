@@ -65,9 +65,15 @@
 				
 				<!-- /.navbar-collapse -->
         		</nav>
-	
-				<tiles:insertAttribute name="body"/>
-	
+				 <div id="page-wrapper">
+					<div class="container-fluid">
+					
+						<tiles:insertAttribute name="body"/>
+					
+					</div>
+					<!-- /.container-fluid -->
+				 </div>
+				 <!-- /#page-wrapper -->
 			</div>
 	</body>
 </html>
