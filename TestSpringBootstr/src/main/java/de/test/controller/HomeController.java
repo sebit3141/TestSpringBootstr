@@ -19,7 +19,7 @@ import de.test.service.ParseBingSearchService;
  */
 @Controller
 public class HomeController {
-	
+	//test
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	@Autowired
