@@ -12,13 +12,14 @@ public class ParseBingSearchService {
 	public void search() {  
 		AzureSearchWebQuery aq = new AzureSearchWebQuery();        
         aq.setAppid("QEHfz7IB7f4m3UNuc1Uyu6NaE2W0eXBlrWsLMWzH6wU");        
-        aq.setQuery("car");
+        aq.setQuery("Mond");
         aq.setMarket("de-DE");
+        aq.setPerPage(50);
         
  // The results are paged. You can get 50 results per page max.
  // This example gets 150 results
         int j = 0;
-        for (int i=1; i<=3 ; i++) {
+        for (int i=1; i<=1 ; i++) {
            aq.setPage(i);
            aq.doQuery();
            AzureSearchResultSet<AzureSearchWebResult> ars = aq.getQueryResult();
